@@ -1,0 +1,25 @@
+[Unit]
+Description=TuyAPI2MQTT
+After=network.target
+
+[Service]
+Type=simple
+User=tuyapi2mqtt
+ExecStart=/usr/bin/node /var/tuyapi2mqtt/main.js
+Restart=on-failure
+
+Environment=APP_MQTT_PROTOCOL=mqtt
+Environment=APP_MQTT_HOST=mqtt.mysite.com
+Environment=APP_MQTT_PORT=1883
+Environment=APP_MQTT_USERNAME=mqttuser
+Environment=APP_MQTT_PASSWORD=bXF0dHBhc3N3b3Jk
+Environment=APP_MQTT_TOPIC=mysite/tuya-device
+
+Environment=APP_TUYAPI_0_NAME=dev0
+Environment=APP_TUYAPI_0_ID=dev0id
+Environment=APP_TUYAPI_0_KEY=ZGV2MHB3
+Environment=APP_TUYAPI_0_IP=192.168.0.2
+Environment=APP_TUYAPI_0_VERSION=3.3
+
+[Install]
+WantedBy=multi-user.target
