@@ -36,7 +36,7 @@ adduser tuyapi2mqtt
 mkdir /var/tuyapi2mqtt
 chown tuyapi2mqtt:tuyapi2mqtt /var/tuyapi2mqtt
 ```
-2. Copy the content of this folder (without folder `.git`) to the directory `/var/tuyapi2mqtt`.
+2. Copy the content of this folder to the directory `/var/tuyapi2mqtt`.
 
 ### Customize `tuyapi2mqtt.service`
 
