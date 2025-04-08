@@ -48,7 +48,7 @@ APP_MQTT_KEY_FILENAME=mysite.key
 ```
 2. Set the MQTT broker password encoded in base64.
 3. Every single Tuya device has its own configuration variables set: `APP_TUYAPI_0_...`, `APP_TUYAPI_1_...`, etc.
-4. The Tuya device has to be connected through Tuya Smart app, it's possible to find the device ID and the device KEY using Tuya developer platform (see [https://github.com/codetheweb/tuyapi/blob/master/docs/SETUP.md](this documentation)).
+4. The Tuya device has to be connected through Tuya Smart app, it's possible to find the device ID and the device KEY using Tuya developer platform (see [this documentation](https://github.com/codetheweb/tuyapi/blob/master/docs/SETUP.md)).
 5. The device key is always encoded as base64, don't forget the key is regenerated after re-addition of the device to Tuya Smart.
 6. You can find out the local device IP through your router. I recomment to configure the static IP (by the MAC address).
 
